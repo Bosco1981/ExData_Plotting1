@@ -1,3 +1,9 @@
+The four scripts are saved in the main repo.
+The four graphs are saved in the figure folder.
+The data file is assumed to be saved in the same folder as the R scripts, in order for them to run properly. 
+For sake of space it was not uploaded to github.
+
+
 ## Introduction
 
 This assignment uses data from
