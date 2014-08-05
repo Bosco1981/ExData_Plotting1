@@ -12,26 +12,26 @@ plot4 <- function() {
         
         par(mfrow = c(2,2))
         #Top Left Graph
-        plot(data$Chrono,data$Global_active_power,lty=1,pch=".",xlab="",
+        plot(data$Chrono,data$Global_active_power,type="l",xlab="",
              main = "",ylab = "Global Active Power")
-        lines(data$Chrono,data$Global_active_power)
+        
         #Top Right Graph
-        plot(data$Chrono,data$Voltage,lty=1,pch=".",xlab="datetime",
+        plot(data$Chrono,data$Voltage,type="l",xlab="datetime",
              main = "",ylab = "Voltage")
-        lines(data$Chrono,data$Voltage)
+        
         #Bottom Left Graph
-        plot(data$Chrono,data$Sub_metering_1,lty=1,pch=".",xlab="",
+        plot(data$Chrono,data$Sub_metering_1,type="l",xlab="",
              main = "",ylab = "Energy sub metering")
-        lines(data$Chrono,data$Sub_metering_1)
+        
         lines(data$Chrono,data$Sub_metering_2,col="red")
         lines(data$Chrono,data$Sub_metering_3,col="blue")
         legend("topright",c("Sub_metering_1","Sub_metering_2",
                             "Sub_metering_3"),lty = c(1,1,1),
                col=c("black","red","blue"),bty = "n")
         #Bottom Right Graph
-        plot(data$Chrono,data$Global_reactive_power,lty=1,pch=".",xlab="datetime",
+        plot(data$Chrono,data$Global_reactive_power,type="l",xlab="datetime",
              main = "",ylab = "Global_reactive_power")
-        lines(data$Chrono,data$Global_reactive_power)
+        
         dev.off()         
 }
 
