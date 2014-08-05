@@ -9,9 +9,9 @@ plot3 <- function() {
         
         #We open a graphics device and plot the histogram 
         png(file="figure/plot3.png",width=480,height=480)
-        plot(data$Chrono,data$Sub_metering_1,lty=1,pch=".",xlab="",
+        plot(data$Chrono,data$Sub_metering_1,type ="l",xlab="",
              main = "",ylab = "Energy sub metering")
-        lines(data$Chrono,data$Sub_metering_1)
+      
         lines(data$Chrono,data$Sub_metering_2,col="red")
         lines(data$Chrono,data$Sub_metering_3,col="blue")
         legend("topright",c("Sub_metering_1","Sub_metering_2",
