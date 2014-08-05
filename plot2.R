@@ -9,9 +9,9 @@ plot2 <- function() {
         
         #We open a graphics device and plot the histogram 
         png(file="figure/plot2.png",width=480,height=480)
-        plot(data$Chrono,data$Global_active_power,lty=1,pch=".",xlab="",
+        plot(data$Chrono,data$Global_active_power,type ="l",xlab="",
              main = "",ylab = "Global Active Power (kilowatts)")
-        lines(data$Chrono,data$Global_active_power)
+       
         dev.off()         
 }
 
